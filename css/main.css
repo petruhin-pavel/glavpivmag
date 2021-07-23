@@ -1,0 +1,14 @@
+.main-container {
+  max-width: 1360px;
+}
+
+.content-container {
+  max-width: 1170px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
