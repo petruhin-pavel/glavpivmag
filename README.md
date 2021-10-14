@@ -1,2 +1,2 @@
 # glavpivmag
-https://petruhin-pavel.github.io/glavpivmag/
+https://ilbuild.github.io/glavpivmag/

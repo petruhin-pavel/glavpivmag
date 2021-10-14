@@ -1,0 +1,38 @@
+$card-bg: #29241E;
+$main-text-color: #FFFFFF;
+$secondary-text-color: #8D8D8D;
+
+.card{
+  /* height: 440px; */
+  width: 270px;
+  background-color: $card-bg;
+  
+}
+
+.card__subtitle{
+  color: $secondary-text-color;
+}
+
+.card__select__volume{
+  display: inline-block;
+}
+
+.card__select__volume__input{
+  position: absolute;
+  appearance: none;
+}
+
+.card__radio{
+  display: inline-block;
+  border-radius: 4px;
+  padding: 7px 18px 7px 10px;
+  color: $secondary-text-color;
+  border: 1px solid $secondary-text-color;
+}
+
+.card__select__volume__input:checked + .card__radio{
+  
+  border: 1px solid $main-text-color;
+  color: $main-text-color;
+  
+}
