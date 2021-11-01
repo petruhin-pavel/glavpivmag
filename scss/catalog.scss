@@ -2,32 +2,69 @@ $card-bg: #29241E;
 $main-text-color: #FFFFFF;
 $secondary-text-color: #8D8D8D;
 
+
 .card{
-  /* height: 440px; */
+   /* height: 440px; */
   width: 270px;
   background-color: $card-bg;
-  
+  padding-bottom: 12px;
+  position: relative;
+
+  &__title__wrap{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 41px;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 21px;
+    margin: 1px 0px;
+  }
+  &__subtitle{
+    color: $secondary-text-color;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0px;
+  }
+
+  &__form{
+    margin: 16px 20px 0 20px;
+  }
+
+  &__select__volume{
+    display: inline-block;
+    cursor: pointer;
+
+    &__input{
+      position: absolute;
+      appearance: none;
+    }
+  }
+  &__radio{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 7px 18px 7px 10px;
+    color: $secondary-text-color;
+    border: 1px solid $secondary-text-color;
+    font-size: 11px;
+    line-height: 13px;
+
+    strong{
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
 }
 
-.card__subtitle{
-  color: $secondary-text-color;
-}
-
-.card__select__volume{
-  display: inline-block;
-}
-
-.card__select__volume__input{
+.card__action__sticker{
   position: absolute;
-  appearance: none;
+  top: 0;
+  left: 28px;
 }
 
-.card__radio{
-  display: inline-block;
-  border-radius: 4px;
-  padding: 7px 18px 7px 10px;
-  color: $secondary-text-color;
-  border: 1px solid $secondary-text-color;
+
+.card__image:hover > .card__description{
+  opacity: 1;
 }
 
 .card__select__volume__input:checked + .card__radio{
@@ -35,4 +72,65 @@ $secondary-text-color: #8D8D8D;
   border: 1px solid $main-text-color;
   color: $main-text-color;
   
+}
+
+.card__button{
+  width: 64px;
+  height: 44px;
+  border-radius: 4px;
+
+  &__wrap{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_like{
+    background: #4F4134 url(../img/icons/Heart.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &_buy{
+    background: #F5EBCF url(../img/icons/cart-add.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+.card__description{
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding-top: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s;
+
+  &__title{
+    margin: 0;
+    padding-bottom: 52px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F1B91B;
+  }
+  &__list{
+    padding: 0;
+    padding-left: 42px;
+  }
+  &__item{
+    padding-bottom: 12px;
+    list-style: none;
+    font-size: 13px;
+    line-height: 15px;
+    color: #F5EBCF;
+
+    strong{
+      color: #8D8D8D;
+    }
+  }
 }

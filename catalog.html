@@ -12,20 +12,39 @@
 
 <body>
   <section class="catalog">
+
     <div class="card">
-      <img src="./img/the_bottle/RussianImperiaStout.png" alt="RussianImperiaStout" class="card__image">
-      <p class="card__subtitle">Jaws Brewery</p>
-      <h2 class="card__title">RussianImperiaStout</h2>
+
+      <div class="card__image">
+        <img src="./img/the_bottle/RussianImperiaStout.png" alt="RussianImperiaStout">
+
+        <div class="card__description">
+          <h3 class="card__description__title">Рекомендую</h3>
+          <ul class="card__description__list">
+            <li class="card__description__item"><strong>Алкоголь:</strong> 8,5%</li>
+            <li class="card__description__item"><strong>Срок хранения:</strong> 180 дней</li>
+            <li class="card__description__item"><strong>Аромат:</strong> Фруктовый</li>
+            <li class="card__description__item"><strong>Вкус:</strong> Фруктовый</li>
+            <li class="card__description__item"><strong>Горечь:</strong> Средняя</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <img src="./img/action-sticker.png" alt="sticker" class="card__action__sticker">
+
+      <div class="card__title__wrap">
+        <p class="card__subtitle">Jaws Brewery</p>
+        <h3 class="card__title">RussianImperiaStout</h3>
+      </div>
+
       <form action="#" class="card__form">
-
-
-
 
         <label class="card__select__volume">
           <input class="card__select__volume__input" name="select__volume" type="radio" value="0.3" checked>
           <div class="card__radio">
             Объем <br>
-            375 мл
+            <strong>375 мл</strong>
           </div>
         </label>
 
@@ -33,18 +52,21 @@
           <input class="card__select__volume__input" name="select__volume" type="radio" value="0.7">
           <div class="card__radio">
             Объем <br>
-            750 мл
+            <strong>750 мл</strong>
           </div>
         </label>
 
 
-
-        <button class="card__button_like"></button>
-        <div class="card__price__wrap">
-          <p class="card__price_action">500p</p>
-          <p class="card__price">400p</p>
+        <div class="card__button__wrap">
+          <button class="card__button card__button_like"></button>
+          <div class="card__price__wrap">
+            <!-- <p class="card__price_action">500p</p> -->
+            <p class="card__price">400p</p>
+          </div>
+          <button class="card__button card__button_buy"></button>
         </div>
-        <button class="card__button_buy"></button>
+
+
       </form>
     </div>
   </section>

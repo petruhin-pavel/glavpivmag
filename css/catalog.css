@@ -2,14 +2,36 @@
   /* height: 440px; */
   width: 270px;
   background-color: #29241E;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.card__title__wrap {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 41px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 1px 0px;
 }
 
 .card__subtitle {
   color: #8D8D8D;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0px;
+}
+
+.card__form {
+  margin: 16px 20px 0 20px;
 }
 
 .card__select__volume {
   display: inline-block;
+  cursor: pointer;
 }
 
 .card__select__volume__input {
@@ -25,9 +47,95 @@
   padding: 7px 18px 7px 10px;
   color: #8D8D8D;
   border: 1px solid #8D8D8D;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.card__radio strong {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.card__action__sticker {
+  position: absolute;
+  top: 0;
+  left: 28px;
+}
+
+.card__image:hover > .card__description {
+  opacity: 1;
 }
 
 .card__select__volume__input:checked + .card__radio {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
+}
+
+.card__button {
+  width: 64px;
+  height: 44px;
+  border-radius: 4px;
+}
+
+.card__button__wrap {
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__button_like {
+  background: #4F4134 url(../img/icons/Heart.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__button_buy {
+  background: #F5EBCF url(../img/icons/cart-add.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card__description {
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding-top: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.card__description__title {
+  margin: 0;
+  padding-bottom: 52px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #F1B91B;
+}
+
+.card__description__list {
+  padding: 0;
+  padding-left: 42px;
+}
+
+.card__description__item {
+  padding-bottom: 12px;
+  list-style: none;
+  font-size: 13px;
+  line-height: 15px;
+  color: #F5EBCF;
+}
+
+.card__description__item strong {
+  color: #8D8D8D;
 }
