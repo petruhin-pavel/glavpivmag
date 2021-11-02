@@ -27,11 +27,24 @@
             <li class="card__description__item"><strong>Вкус:</strong> Фруктовый</li>
             <li class="card__description__item"><strong>Горечь:</strong> Средняя</li>
           </ul>
+
+          <div class="bottles__number">
+            <button class="bottles__number__btn bottles__number__btn_minus" id="bottle_minus"></button>
+            <input class="bottles__number__inp" type="number" value="2" id="bottle_col">
+            <button class="bottles__number__btn bottles__number__btn_plus" id="bottle_plus"></button>
+          </div>
+
+
+
         </div>
 
       </div>
 
       <img src="./img/action-sticker.png" alt="sticker" class="card__action__sticker">
+      <div class="raiting">
+        <div class="raiting__star"></div>
+        <span class="raiting__num">4.0</span>
+      </div>
 
       <div class="card__title__wrap">
         <p class="card__subtitle">Jaws Brewery</p>
@@ -70,6 +83,8 @@
       </form>
     </div>
   </section>
+
+  <script src="./js/catalog.js"></script>
 </body>
 
 </html>

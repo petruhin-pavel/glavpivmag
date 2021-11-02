@@ -63,7 +63,7 @@ $secondary-text-color: #8D8D8D;
 }
 
 
-.card__image:hover > .card__description{
+.card:hover .card__description{
   opacity: 1;
 }
 
@@ -101,7 +101,7 @@ $secondary-text-color: #8D8D8D;
 
 
 .card__description{
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -120,6 +120,7 @@ $secondary-text-color: #8D8D8D;
   }
   &__list{
     padding: 0;
+    margin: 0;
     padding-left: 42px;
   }
   &__item{
@@ -133,4 +134,65 @@ $secondary-text-color: #8D8D8D;
       color: #8D8D8D;
     }
   }
+}
+
+.raiting{
+  position: absolute;
+  right: 29px;
+  top: 16px;
+  width: 20px;
+  text-align: center;
+  
+  &__star{
+    width: 100%;
+    height: 20px;
+    background-image: url(../img/icons/Star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &__num{
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.bottles__number{
+  text-align: center;
+
+  &__btn{
+    width: 14px;
+    height: 14px;
+    margin: 10px;
+
+    &_minus{
+      background: url(../img/icons/minus.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      &:disabled{
+        opacity: 0.5;
+      }
+    }
+    &_plus{
+      background: url(../img/icons/plus.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__inp{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

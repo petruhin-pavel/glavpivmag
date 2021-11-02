@@ -62,7 +62,7 @@
   left: 28px;
 }
 
-.card__image:hover > .card__description {
+.card:hover .card__description {
   opacity: 1;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .card__description {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -125,6 +125,7 @@
 
 .card__description__list {
   padding: 0;
+  margin: 0;
   padding-left: 42px;
 }
 
@@ -138,4 +139,69 @@
 
 .card__description__item strong {
   color: #8D8D8D;
+}
+
+.raiting {
+  position: absolute;
+  right: 29px;
+  top: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.raiting__star {
+  width: 100%;
+  height: 20px;
+  background-image: url(../img/icons/Star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.raiting__num {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bottles__number {
+  text-align: center;
+}
+
+.bottles__number__btn {
+  width: 14px;
+  height: 14px;
+  margin: 10px;
+}
+
+.bottles__number__btn_minus {
+  background: url(../img/icons/minus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottles__number__btn_minus:disabled {
+  opacity: 0.5;
+}
+
+.bottles__number__btn_plus {
+  background: url(../img/icons/plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottles__number__inp {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
