@@ -29,8 +29,8 @@
           </ul>
 
           <div class="bottles__number">
-            <button class="bottles__number__btn bottles__number__btn_minus" id="bottle_minus"></button>
-            <input class="bottles__number__inp" type="number" value="2" id="bottle_col">
+            <button class="bottles__number__btn bottles__number__btn_minus" id="bottle_minus" disabled></button>
+            <input class="bottles__number__inp" type="number" value="1" id="bottle_col">
             <button class="bottles__number__btn bottles__number__btn_plus" id="bottle_plus"></button>
           </div>
 
@@ -54,7 +54,8 @@
       <form action="#" class="card__form">
 
         <label class="card__select__volume">
-          <input class="card__select__volume__input" name="select__volume" type="radio" value="0.3" checked>
+          <input class="card__select__volume__input" name="select__volume" type="radio" value="0.375" id="bottle375"
+            checked>
           <div class="card__radio">
             Объем <br>
             <strong>375 мл</strong>
@@ -62,7 +63,7 @@
         </label>
 
         <label class="card__select__volume">
-          <input class="card__select__volume__input" name="select__volume" type="radio" value="0.7">
+          <input class="card__select__volume__input" name="select__volume" type="radio" value="0.750" id="bottle750">
           <div class="card__radio">
             Объем <br>
             <strong>750 мл</strong>

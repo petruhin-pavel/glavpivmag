@@ -101,7 +101,7 @@ $secondary-text-color: #8D8D8D;
 
 
 .card__description{
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -169,7 +169,7 @@ $secondary-text-color: #8D8D8D;
       background-position: center;
       background-repeat: no-repeat;
       &:disabled{
-        opacity: 0.5;
+        opacity: 0.2;
       }
     }
     &_plus{
